@@ -1,0 +1,54 @@
+.activityArticle {
+  padding: 0.25rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 1px 1px 8px rgb(236, 234, 234), -1px -1px 8px rgb(236, 234, 234),
+    -1px 1px 8px rgb(236, 234, 234), 1px -1px 8px rgb(236, 234, 234);
+  .active {
+    background-color: #00d1b2;
+  }
+  .article-left {
+    background-color: #eff5fb;
+    border-radius: 10px;
+
+    text-align: center;
+
+    h3 {
+      color: #4a4a4a;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      background-color: #ff6347;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      width: fit-content;
+      color: white;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+    }
+  }
+  .article-right {
+    flex-wrap: wrap;
+    & > * {
+      margin: 0.5rem;
+    }
+  }
+  .close-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    color: rgb(240, 150, 32);
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      cursor: pointer;
+      &:hover {
+        color: $pri;
+      }
+    }
+  }
+}

@@ -134,13 +134,93 @@ table {
 }
 
 body {
-  font-size: 2px px;
+  font-size: 20px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 a {
   color: black;
   text-decoration: none;
   display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn-sec {
+  background-color: #00d1b2;
+  color: white;
+}
+
+.button {
+  width: 2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #e4dede;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  border: 1px solid #3e8ed0;
+}
+
+.error-sec {
+  min-height: 60vh;
+}
+
+.error-sec h2 {
+  padding: 4rem 0;
+  font-size: 2rem;
+  color: #00d1b2;
+}
+
+@-webkit-keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.donut {
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #7983ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: donut-spin 1.2s linear infinite;
+          animation: donut-spin 1.2s linear infinite;
 }
 
 .flex {
@@ -168,5 +248,139 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 28%;
+          flex: 0 1 28%;
+  margin: 1%;
+}
+
+.flex-70 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 68%;
+          flex: 0 1 68%;
+  margin: 1%;
+}
+
+.hero-sec {
+  padding: 2rem 0;
+}
+
+.hero-sec h1 {
+  color: #3e8ed0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero-sec form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-sec form fieldset {
+  width: 70%;
+}
+
+.hero-sec form fieldset input {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 1px solid #e2dfdf;
+  border-radius: 5px 0 0 5px;
+}
+
+.hero-sec form fieldset input::-webkit-input-placeholder {
+  padding-left: 1rem;
+  color: #bebbbb;
+}
+
+.hero-sec form fieldset input:-ms-input-placeholder {
+  padding-left: 1rem;
+  color: #bebbbb;
+}
+
+.hero-sec form fieldset input::-ms-input-placeholder {
+  padding-left: 1rem;
+  color: #bebbbb;
+}
+
+.hero-sec form fieldset input::placeholder {
+  padding-left: 1rem;
+  color: #bebbbb;
+}
+
+.hero-sec form button {
+  width: 30%;
+  background-color: #00d1b2;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.activityArticle {
+  padding: 0.25rem;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 8px #eceaea, -1px -1px 8px #eceaea, -1px 1px 8px #eceaea, 1px -1px 8px #eceaea;
+          box-shadow: 1px 1px 8px #eceaea, -1px -1px 8px #eceaea, -1px 1px 8px #eceaea, 1px -1px 8px #eceaea;
+}
+
+.activityArticle .active {
+  background-color: #00d1b2;
+}
+
+.activityArticle .article-left {
+  background-color: #eff5fb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.activityArticle .article-left h3 {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.activityArticle .article-left h4 {
+  background-color: #ff6347;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.activityArticle .article-right {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.activityArticle .article-right > * {
+  margin: 0.5rem;
+}
+
+.activityArticle .close-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #f09620;
+}
+
+.activityArticle .close-div svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.activityArticle .close-div svg:hover {
+  color: #3e8ed0;
 }
 /*# sourceMappingURL=App.css.map */

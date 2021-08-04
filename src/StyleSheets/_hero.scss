@@ -1,0 +1,35 @@
+.hero-sec {
+  h1 {
+    color: $pri;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  padding: 2rem 0;
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    fieldset {
+      width: 70%;
+      input {
+        width: 100%;
+        padding: 0.5rem 0;
+        border: 1px solid rgb(226, 223, 223);
+        border-radius: 5px 0 0 5px;
+        &::placeholder {
+          padding-left: 1rem;
+          color: rgb(190, 187, 187);
+        }
+      }
+    }
+    button {
+      width: 30%;
+      background-color: $sec;
+      border-radius: 0 5px 5px 0;
+      color: white;
+      outline: none;
+      border: none;
+    }
+  }
+}
