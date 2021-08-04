@@ -16,13 +16,6 @@ class Home extends Component {
     this.setState({ data: fetchedData });
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.data !== this.state.data) {
-      let fetchedData = JSON.parse(localStorage.getItem('data'));
-      //   this.setState({ data: fetchedData });
-    }
-  }
-
   //removentry
   removentry = (activityIndex) => {
     let updatedData = [...this.state.data];

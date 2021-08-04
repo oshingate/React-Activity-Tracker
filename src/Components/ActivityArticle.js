@@ -46,7 +46,7 @@ class ActivityArticle extends Component {
                 width='16'
                 height='16'
                 fill='currentColor'
-                class='bi bi-x-circle'
+                className='bi bi-x-circle'
                 viewBox='0 0 16 16'
                 onClick={(event) => {
                   this.props.removeActivity(this.props.dataIndex);

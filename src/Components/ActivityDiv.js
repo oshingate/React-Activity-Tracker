@@ -36,15 +36,13 @@ class ActivityDiv extends Component {
           <section className='activityDiv-sec container'>
             {this.state.data.map((activity, i) => {
               return (
-                <>
-                  <ActivityArticle
-                    activity={activity}
-                    key={activity.ActivityName}
-                    dataIndex={i}
-                    handleclickDay={this.handleclickDay}
-                    removeActivity={this.removeActivity}
-                  />
-                </>
+                <ActivityArticle
+                  activity={activity}
+                  key={activity.ActivityName}
+                  dataIndex={i}
+                  handleclickDay={this.handleclickDay}
+                  removeActivity={this.removeActivity}
+                />
               );
             })}
           </section>
