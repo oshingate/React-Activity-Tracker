@@ -75,13 +75,15 @@ class Home extends Component {
     console.log('newly created Data', newData);
 
     this.setState((prevState) => {
-      localStorage.setItem(
-        'data',
-        JSON.stringify(prevState.data.concat(newData))
-      );
-      return {
-        data: prevState.data.concat(newData),
-      };
+      if (prevState.data) {
+        localStorage.setItem(
+          'data',
+          JSON.stringify(prevState.data.concat(newData))
+        );
+        return {
+          data: prevState.data.concat(newData),
+        };
+      }
     });
 
     event.target.input.value = null;
