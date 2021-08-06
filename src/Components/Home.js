@@ -91,16 +91,20 @@ class Home extends Component {
       <>
         <HeroSec addNewActivity={this.addNewActivity} />
 
-        {this.state.data.length > 0 ? (
-          <ActivityDiv
-            data={this.state.data}
-            updateMainData={this.updateMainData}
-            removentry={this.removentry}
-          />
+        {this.state.data ? (
+          this.state.data.length > 0 ? (
+            <ActivityDiv
+              data={this.state.data}
+              updateMainData={this.updateMainData}
+              removentry={this.removentry}
+            />
+          ) : (
+            <section className='error-sec'>
+              <h2 className='text-center'>No Activity To Display</h2>
+            </section>
+          )
         ) : (
-          <section className='error-sec'>
-            <h2 className='text-center'>No Activity To Display</h2>
-          </section>
+          ''
         )}
       </>
     );
