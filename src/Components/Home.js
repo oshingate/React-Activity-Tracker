@@ -7,7 +7,48 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
+      data: [
+        {
+          ActivityName: 'Learn React',
+          month: {
+            name: 'August  ',
+            days: 31,
+          },
+          days: [
+            '{isDone: true, noOfDay: 1}',
+            '{isDone: false, noOfDay: 2}',
+            '{isDone: true, noOfDay: 3}',
+            '{isDone: false, noOfDay: 4}',
+            '{isDone: false, noOfDay: 5}',
+            '{isDone: false, noOfDay: 6}',
+            '{isDone: false, noOfDay: 7}',
+            '{isDone: false, noOfDay: 8}',
+            '{isDone: false, noOfDay: 9}',
+            '{isDone: false, noOfDay: 10}',
+            '{isDone: false, noOfDay: 11}',
+            '{isDone: true, noOfDay: 12}',
+            '{isDone: false, noOfDay: 13}',
+            '{isDone: false, noOfDay: 14}',
+            '{isDone: false, noOfDay: 15}',
+            '{isDone: false, noOfDay: 16}',
+            '{isDone: false, noOfDay: 17}',
+            '{isDone: false, noOfDay: 18}',
+            '{isDone: false, noOfDay: 19}',
+            '{isDone: false, noOfDay: 20}',
+            '{isDone: false, noOfDay: 21}',
+            '{isDone: false, noOfDay: 22}',
+            '{isDone: false, noOfDay: 23}',
+            '{isDone: false, noOfDay: 24}',
+            '{isDone: false, noOfDay: 25}',
+            '{isDone: false, noOfDay: 26}',
+            '{isDone: false, noOfDay: 27}',
+            '{isDone: false, noOfDay: 28}',
+            '{isDone: false, noOfDay: 29}',
+            '{isDone: false, noOfDay: 30}',
+            '{isDone: false, noOfDay: 31}',
+          ],
+        },
+      ],
     };
   }
 
