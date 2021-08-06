@@ -83,6 +83,11 @@ class Home extends Component {
         return {
           data: prevState.data.concat(newData),
         };
+      } else {
+        localStorage.setItem('data', JSON.stringify([newData]));
+        return {
+          data: [newData],
+        };
       }
     });
 
